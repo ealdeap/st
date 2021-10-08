@@ -1,3 +1,4 @@
+import spicy
 from pandas.io import excel
 from pandas.tseries.offsets import BQuarterBegin
 import streamlit as st
