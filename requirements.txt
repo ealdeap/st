@@ -57,3 +57,6 @@ toml==0.10.2
 tomli==1.2.1
 validators==0.18.2
 xlrd==2.0.1
+matplotlib==3.3.3
+pytz==2020.5
+nltk==3.5
