@@ -370,7 +370,7 @@ fig.add_trace(go.Bar(x = data_chart[0], y = data_chart[1], name = "SDG present p
 
 st.plotly_chart(fig)
 
-fig.update_layout(width=800)
+fig.update_layout(width=2000)
 
 
 
