@@ -32,8 +32,8 @@ nltk.download('stopwords')
 
 
 
-#st.set_page_config(layout="wide")
-#st.sidebar.header("Welcome to the SDG Classifier App")
+st.set_page_config(layout="wide")
+st.sidebar.header("Welcome to the SDG Classifier App")
 
 ## load data 
 @st.cache
