@@ -373,26 +373,6 @@ st.plotly_chart(fig)
 
 
 
-rowSums = data_raw.iloc[:,1:].sum(axis=1)
-multiLabel_counts = rowSums.value_counts()
-multiLabel_counts = multiLabel_counts.iloc[:]
-sns.set(font_scale = 1)
-plt.figure(figsize=(20,30))
-ax = sns.barplot(multiLabel_counts.index, multiLabel_counts.values)
-plt.title("Articles having multiple SDG ")
-plt.ylabel('Number of Articles', fontsize=18)
-plt.xlabel('Number of SDG', fontsize=18)
-#adding the text labels
-rects = ax.patches
-labels = multiLabel_counts.values
-for rect, label in zip(rects, labels):
-    height = rect.get_height()
-    ax.text(rect.get_x() + rect.get_width()/2, height + 5, label, ha='center', va='bottom')
-plt.show()
-
-
-
-
 
 @st.cache
 def get_UN_data():
