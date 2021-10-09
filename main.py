@@ -27,7 +27,7 @@ from sklearn.multiclass import OneVsRestClassifier
 from IPython.display import Markdown, display
 import pickle
 import warnings
-
+nltk.download('stopwords')
 
 
 
