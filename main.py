@@ -47,7 +47,7 @@ def load_data_chart(nrows):
     return data
 
 def load_data_sample(nrows):
-    data = pd.read_excel("sample.xlsx", nrows=nrows)
+    data = pd.read_excel("Sample.xlsx", nrows=nrows)
     return data
 
 # load datasets
