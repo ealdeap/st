@@ -83,7 +83,7 @@ if page == "Sample Data":
 
 
     
-    sns.set(font_scale = 0.8)
+#    sns.set(font_scale = 0.8)
 
     categories = pd.DataFrame(data_raw.columns.values)[1:18]
     categories = categories.reset_index(drop = True)
