@@ -34,7 +34,7 @@ from IPython.display import Markdown, display
 import pickle
 import warnings
 import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 nltk.download('stopwords')
 
 
