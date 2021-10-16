@@ -95,23 +95,6 @@ if page == "Sample Data":
 
     p = p.set_axis(['category', 'value'], axis=1, inplace=False)
 
-    gra, ax = plt.subplots(figsize=(15, 7)) 
-
-    ax = sns.barplot(p["category"], p["value"], color="m")
-
-    rects = ax.patches
-    labels = p["value"]
-    for rect, label in zip(rects, labels):
-        height = rect.get_height()
-        ax.text(rect.get_x() + rect.get_width()/2, height + 5, label, ha='center', va='bottom', fontsize=8)
-
-    plt.title("Articles in each category", fontsize=10)
-    plt.ylabel('Number of Articles', fontsize=8)
-    plt.xlabel('SDG number', fontsize=8)
-    
-
-    st.pyplot(gra)
-
     c = alt.Chart(p).mark_bar().encode(alt.X("category", 
     sort= ["goal_1" ,"goal_2" ,"goal_3" ,"goal_4" ,"goal_5" ,"goal_6" ,
     "goal_7" ,"goal_8" ,"goal_9" ,"goal_10","goal_11","goal_12","goal_13",
