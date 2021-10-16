@@ -5,7 +5,7 @@ from matplotlib import scale
 from numpy.testing._private.utils import print_assert_equal
 from pandas.io import excel
 from pandas.tseries.offsets import BQuarterBegin
-from seaborn.rcmod import set_theme
+#from seaborn.rcmod import set_theme
 import streamlit as st
 from streamlit.elements.arrow_altair import ChartType
 import altair as alt
